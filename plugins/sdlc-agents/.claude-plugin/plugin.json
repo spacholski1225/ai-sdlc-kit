@@ -1,0 +1,30 @@
+{
+  "name": "sdlc-agents",
+  "version": "0.1.0",
+  "description": "A pane with the live tree of the session's subagents: status, steps, tool calls, context size, and the prompt each was handed and the answer it returned.",
+  "userConfig": {
+    "columns": {
+      "type": "number",
+      "title": "Pane width",
+      "description": "Columns asked for the docked pane",
+      "default": 52
+    },
+    "maxAgents": {
+      "type": "number",
+      "title": "Agents kept",
+      "description": "Subagents remembered; the oldest finished ones are dropped first",
+      "default": 60
+    },
+    "openOnStart": {
+      "type": "boolean",
+      "title": "Open on start",
+      "description": "Open the pane when the session starts",
+      "default": false
+    }
+  },
+  "author": {
+    "name": "Szymon Pacholski"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/spacholski1225/ai-sdlc-kit"
+}

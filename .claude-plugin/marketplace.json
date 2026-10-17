@@ -1,0 +1,34 @@
+{
+  "name": "ai-sdlc-kit",
+  "description": "AI SDLC toolkit for Claude Code: spec-driven workflow skills, sub-agents and mods",
+  "owner": {
+    "name": "Szymon Pacholski"
+  },
+  "plugins": [
+    {
+      "name": "sdlc",
+      "source": "./plugins/sdlc",
+      "description": "Spec-driven AI SDLC workflow: from explore and grill-me to spec, tickets, parallel implementation, review and PR"
+    },
+    {
+      "name": "sdlc-guard",
+      "source": "./plugins/sdlc-guard",
+      "description": "Mod: blocks destructive shell commands, redacts secrets from tool results, enforces commit hygiene"
+    },
+    {
+      "name": "sdlc-cache",
+      "source": "./plugins/sdlc-cache",
+      "description": "Mod: a quiet countdown above the prompt to the moment the prompt cache lapses (/cache)"
+    },
+    {
+      "name": "sdlc-agents",
+      "source": "./plugins/sdlc-agents",
+      "description": "Mod: a pane with the live tree of the session's subagents (/agent-tree)"
+    },
+    {
+      "name": "sdlc-git",
+      "source": "./plugins/sdlc-git",
+      "description": "Mod: a pane with the repository's worktrees and branches (/git-panel)"
+    }
+  ]
+}

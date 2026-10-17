@@ -1,0 +1,10 @@
+{
+  "name": "sdlc",
+  "version": "0.1.0",
+  "description": "Spec-driven AI SDLC workflow: from explore and grill-me to spec, tickets, parallel implementation, review and PR",
+  "author": {
+    "name": "Szymon Pacholski"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/spacholski1225/ai-sdlc-kit"
+}

@@ -1,0 +1,54 @@
+{
+  "name": "sdlc-guard",
+  "version": "0.1.0",
+  "description": "Blocks destructive shell commands, redacts secrets from tool results and enforces commit hygiene (no co-author trailers, explicit paths, no local env files).",
+  "userConfig": {
+    "patterns": {
+      "type": "string",
+      "title": "Extra deny patterns",
+      "description": "Comma-separated regexes for Bash commands to deny, e.g. \\bkubectl\\s+delete\\b",
+      "default": ""
+    },
+    "localFiles": {
+      "type": "string",
+      "title": "Extra local-only files",
+      "description": "Comma-separated regexes for paths that must not be staged",
+      "default": ""
+    },
+    "secretPatterns": {
+      "type": "string",
+      "title": "Extra secret patterns",
+      "description": "Comma-separated regexes redacted from tool results",
+      "default": ""
+    },
+    "coAuthor": {
+      "type": "boolean",
+      "title": "Refuse Co-Authored-By trailers",
+      "default": true,
+      "description": "Deny git commits whose message carries a Co-Authored-By trailer"
+    },
+    "blanketStaging": {
+      "type": "boolean",
+      "title": "Refuse git add -A / git commit -a",
+      "default": true,
+      "description": "Deny git add -A / git add . / git commit -a; stage explicit paths"
+    },
+    "localFileRule": {
+      "type": "boolean",
+      "title": "Refuse staging .env / override / *.local files",
+      "default": true,
+      "description": "Deny staging .env, docker-compose.override.yml and *.local files"
+    },
+    "redactSecrets": {
+      "type": "boolean",
+      "title": "Redact secrets in tool results",
+      "default": true,
+      "description": "Replace API keys, tokens and private keys in tool results with placeholders"
+    }
+  },
+  "author": {
+    "name": "Szymon Pacholski"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/spacholski1225/ai-sdlc-kit"
+}

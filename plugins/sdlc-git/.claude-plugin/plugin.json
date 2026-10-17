@@ -1,0 +1,30 @@
+{
+  "name": "sdlc-git",
+  "version": "0.1.0",
+  "description": "A side pane with the repository's worktrees and local branches: click a worktree to move the session there, click a branch for its last commits and to switch to it.",
+  "userConfig": {
+    "columns": {
+      "type": "number",
+      "title": "Pane width",
+      "description": "Columns asked for the docked pane",
+      "default": 44
+    },
+    "maxBranches": {
+      "type": "number",
+      "title": "Branches listed",
+      "description": "Most recently committed local branches shown",
+      "default": 40
+    },
+    "openOnStart": {
+      "type": "boolean",
+      "title": "Open on start",
+      "description": "Open the pane when the session starts",
+      "default": false
+    }
+  },
+  "author": {
+    "name": "Szymon Pacholski"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/spacholski1225/ai-sdlc-kit"
+}

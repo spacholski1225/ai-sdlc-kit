@@ -1,0 +1,35 @@
+{
+  "name": "sdlc-cache",
+  "version": "0.1.0",
+  "description": "Shows how well this conversation's prompt cache works: hit rate of the last request, session totals, and a countdown to the moment the cache lapses.",
+  "userConfig": {
+    "ttl": {
+      "type": "string",
+      "title": "Cache lifetime",
+      "description": "Force 5m or 1h; auto is one hour unless Claude Code is set to five minutes or the request timing shows otherwise",
+      "default": "auto",
+      "options": [
+        "auto",
+        "5m",
+        "1h"
+      ]
+    },
+    "warnSeconds": {
+      "type": "number",
+      "title": "Warn before expiry (seconds)",
+      "description": "Turn the countdown yellow, and toast once, this many seconds before the cache lapses",
+      "default": 60
+    },
+    "showStatus": {
+      "type": "boolean",
+      "title": "Status line entry",
+      "description": "Also put a short cache summary in the status line",
+      "default": false
+    }
+  },
+  "author": {
+    "name": "Szymon Pacholski"
+  },
+  "license": "MIT",
+  "repository": "https://github.com/spacholski1225/ai-sdlc-kit"
+}
