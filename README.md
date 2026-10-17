@@ -48,6 +48,8 @@ Skills in `plugins/sdlc/skills/in-progress/` are drafts and are not loaded.
 /plugin install sdlc@ai-sdlc-kit
 ```
 
+The first command registers this repository as a plugin marketplace on your machine (once per machine); it does not publish anything. The second installs the `sdlc` plugin from it. Mods below are installed the same way, one by one.
+
 From a shell: `claude plugin marketplace add spacholski1225/ai-sdlc-kit`, then `claude plugin install sdlc@ai-sdlc-kit`. In the desktop app, use + next to the prompt, Plugins, Add marketplace, then Add plugin.
 
 Updating: `claude plugin marketplace update ai-sdlc-kit`, then `/reload-plugins`. Each plugin has its own `version`; you get changes once it is bumped.
